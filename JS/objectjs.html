@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>objects!!</title>
+	<script type="text/javascript">
+		var person = new Object();
+		person.fname = "Radha";
+		person.lname = "NS"
+		person.age = 22;
+		person.id = 101;
+		person.salary1 = 20000;
+		person.salary2 = 10000;
+
+
+		person.calculateAverage = function()
+		 {
+			return (person.salary1 + person.salary2)/2;
+		};
+
+		person.displayDetails = function()
+		{
+			document.write("person id:" + person.id + "<br/>");
+			document.write("Name: " + person.fname + " " + person.lname+ "<br/>");
+			document.write("Age:" +person.age + "<br/>" );
+			var avg = person.calculateAverage();
+			document.write("Average salary: " + avg);
+		};
+		person.displayDetails();
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

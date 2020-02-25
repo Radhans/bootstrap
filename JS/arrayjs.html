@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+      <script type="text/javascript">
+      	var students = new Array("Upasana","Radha","naipu","manavi","sowju");
+      	Array.prototype.displayItems=function(){
+      		for( var i=0;i<this.length;i++){
+      			document.write(this[i] + "<br />");
+      	}
+  }
+   document.write("students array<br />");
+   students.displayItems();
+   document.write("<br />The number of items in students array is " + students.length + "<br />");
+   document.write("<br />The sorted students array<br />");
+   students.sort();
+   students.displayItems();
+   document.write("<br /> The reversed students array<br />");
+   students.reverse();
+   students.displayItems();
+   document.write("<br /> The students array after removing the last item<br />");
+   students.pop();
+   students.displayItems();
+    document.write("<br /> The students array after push<br />");
+    students.push("new stuff");
+   students.displayItems();
+
+      </script>
+</body>
+</html>
