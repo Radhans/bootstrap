@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<select id="select"></select>
+	<button type="button" onclick="dd()">check array's value</button>
+	<script type="text/javascript">
+
+	function dd()
+	{
+		var select = document.getElementById("select"),
+		       arr = ["html","css","java","javascript","php","c++","node.js","ASP","JSP","SQL"];
+
+		       for(var i=0;i<arr.length;i++)
+		       {
+		       	var option = document.createElement("OPTION"),
+                       txt = document.createTextNode(arr[i]);
+                  option.appendChild(txt);
+                  option.setAttribute("value",arr[i]);
+                  select.insertBefore(option,select.firstChild);
+
+		       }
+	}
+
+</script>
+
+</body>
+</html>
